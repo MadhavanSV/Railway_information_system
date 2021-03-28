@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Existing User</title>
+<style>
+.footer{ 
+       position: fixed; 
+       color:white;	   
+       text-align: right;    
+       bottom: 0px; 
+       width: 99%;
+   }  
+</style>
+</head>
+
+<body style="background-image:url('https://wallpaperaccess.com/full/1457225.jpg')">
+<fieldset style="border:6px;border-color:white;border-style:solid;">
+<div style="font-family:Georgia;color:white">
+<legend> Ticket Booking </legend>
+</div>
+<form name="frmContact" method="post" action="phpexisting.php">
+<p>
+<label style="font-family:Georgia;color:white" for="ID"> ID </label>
+<input style="font-family:Georgia;color:black" type="text" name="psgid" id="psgid">
+</p>
+<p>
+<label style="font-family:Georgia;color:white" for="date">Date</label>
+<input style="font-family:Georgia;color:black" type="text" name="psgDate" id="psgDate">
+</p>
+<p>
+<label style="font-family:Georgia;color:white" for="train_no">Train Number</label>
+<select type="text" name="psgTNo" id="psgTNo">
+ 	<option></option>
+	<option>12342</option>
+        </select>
+</p>
+<p>
+<label style="font-family:Georgia;color:white" for="from_st">From</label>
+<select type="text" name="psgFromSt" id="psgFromSt">
+	    <option></option>
+	    <option>MADURAI</option>
+            <option>DINDIGUL</option>
+            <option>KARUR</option>
+            <option>ERODE</option>
+        </select>
+</p>
+<p>
+<label style="font-family:Georgia;color:white" for="to_st">To</label>
+<select type="text" name="psgToSt" id="psgToSt">
+	    <option></option>
+	    <option>DINDIGUL</option>
+            <option>KARUR</option>
+			
+            <option>ERODE</option>
+            <option>COIMBATORE</option>
+        </select>
+</p>
+<label style="font-family:Georgia;color:white" for="train_no">Proceed to payment</label><br>
+<input type="radio" id="payment" name="payment" value="YES">
+<label style="font-family:Georgia;color:white" for="YES">YES</label><br>
+<input type="radio" id="payment" name="payment" value="NO">
+<label style="font-family:Georgia;color:white" for="EXISTING">NO</label><br>
+
+<p>
+<input type="submit" name="Submit" id="Submit" value="Next">
+</p>
+</form>
+</fieldset>
+<div style="font-family:fantasy;color:white">
+<marquee behavior="scroll" direction="left" scrollamount="15">Welcome to the train ticket booking...! Please enter valid and legit details...! - BookMyTrain</marquee>
+</div>
+<div class="footer">Contact us at bookmytrain@train.ticket.com</div>
+</body>
+</html>
